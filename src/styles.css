@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+.textStyle {
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1.5rem;
+  vertical-align: -webkit-baseline-middle;
+  padding-top: 1rem;
+  font-size: large;
+  width: 50%;
+  margin-bottom: 2rem;
+  border-color: aqua;
+  border-bottom-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.imageSize {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 1rem;
+}
