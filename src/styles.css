@@ -20,9 +20,10 @@ h1 {
 .textStyle {
   font-family: sans-serif;
   text-align: center;
-  line-height: 1.5rem;
   vertical-align: -webkit-baseline-middle;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 2rem;
   font-size: large;
   width: 50%;
   margin-bottom: 2rem;
@@ -36,4 +37,21 @@ h1 {
   height: 50%;
   margin: auto;
   margin-top: 1rem;
+}
+
+.myButton {
+  font-size: large;
+  padding: 1rem;
+  width: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #dbeafe;
+}
+
+.output {
+  color: #8b5cf6;
+  font-weight: bold;
+  font-size: large;
 }
