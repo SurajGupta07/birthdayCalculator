@@ -21,9 +21,14 @@ export default function App() {
     setNumberFetch(event.target.value);
   }
 
-  function calculate() {
-    console.log(userInput);
-    console.log(newNumberFetch);
+  function calculate(event) {
+    var newNum = Math.random();
+    console.log(newNum);
+    if (newNum === newNumberFetch) {
+      var sentence = "You're the luckiest person alive";
+    } else {
+      var sentence = "Not the luckiest";
+    }
   }
 
   return (
@@ -61,13 +66,13 @@ export default function App() {
 
       {/* Showing Output */}
       <div>
-        <p>
+        <p className="outputDiv">
           According to you, your Birthday is on{" "}
           <span className="output">{userInput}</span> and your lucky number is{" "}
           <span className="output">{newNumberFetch}</span>
         </p>
+        <p>{}</p>
       </div>
-      <div>{}</div>
     </div>
   );
 }
