@@ -3,28 +3,24 @@ import "./styles.css";
 import logo from "/images/bday.svg";
 import { useState } from "react";
 
-var bgColor = {
-  purple: "#C7D2FE",
-  lightPurple: "#EEF2FF"
+let bgColor = {
+    purple: "#C7D2FE",
+    lightPurple: "#EEF2FF"
 };
 
 export default function App() {
-  var [userInput, setUserInput] = useState("7th?");
+  let [userInput, setUserInput] = useState("7th?");
 
-  function inputChangeHandler(event) {
-    setUserInput(event.target.value);
-  }
+  const inputChangeHandler = (event) => setUserInput(event.target.value);
 
-  var [newNumberFetch, setNumberFetch] = useState("7?");
+  let [newNumberFetch, setNumberFetch] = useState("7?");
 
-  function numberFetch(event) {
-    setNumberFetch(event.target.value);
-  }
+  const numberFetch = (event) => setNumberFetch(event.target.value);
 
-  var [output, setOutput] = useState("");
+  let [output, setOutput] = useState("");
 
-  function calculate(event) {
-    var newNum = Math.random();
+  const calculate = (event) => {
+    let newNum = Math.random();
     if (newNum === newNumberFetch) {
       setOutput("Your Birhday is the true defination of LUCK");
     } else {
